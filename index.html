@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bean Boutique - Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <header>
+    <div class="brand-logo">
+      <img src="https://i.pinimg.com/736x/39/3b/b1/393bb1bb15940aea508dd07c5da23917.jpg" alt="Coffee Logo" class="logo-img">
+      <h1>Bean Boutique Coffee Shop</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="coffee.html">Coffee Selection</a>
+      <a href="equipment.html">Brewing Equipment</a>
+      <a href="events.html">Events</a>
+      <a href="cart.html">Shopping Cart (<span id="cart-count">0</span>)</a>
+      <a href="offers.html">Special Offers</a>
+    </nav>
+  </header>
+
+  
+  <section class="slideshow">
+    <img src="https://i.pinimg.com/1200x/c1/5f/19/c15f19c2e7b0a94dc98a160fbc358d60.jpg" alt="Coffee Beans">
+    <img src="https://i.pinimg.com/736x/c3/1c/c8/c31cc8b0ea9474e7d9d2a695d5af628d.jpg" alt="Brewing Equipment">
+    <img src="https://i.pinimg.com/1200x/32/44/9c/32449ca65fb8ae32fbf99cc9c5e93ac9.jpg" alt="Coffee Community">
+  </section>
+
+  
+  <div id="discountModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Welcome to Bean Boutique!</h2>
+      <p>Sign up with your email and get 10% off your first purchase!</p>
+      <input type="email" placeholder="Enter your email">
+      <button>Sign Up</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Bean Boutique</p>
+  </footer>
+
+  <script>
+    
+    window.onload = function() {
+      document.getElementById("discountModal").style.display = "block";
+    };
+    document.querySelector(".close").onclick = function() {
+      document.getElementById("discountModal").style.display = "none";
+    };
+
+    
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let slides = document.querySelectorAll(".slideshow img");
+      slides.forEach(slide => slide.style.display = "none");
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3000); // Change every 3 seconds
+    }
+  </script>
+</body>
+</html>
