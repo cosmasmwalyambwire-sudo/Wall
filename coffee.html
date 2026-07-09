@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Coffee Selection - Bean Boutique</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Our Coffee Blends</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="coffee.html">Coffee Selection</a>
+      <a href="equipment.html">Brewing Equipment</a>
+      <a href="events.html">Events</a>
+      <a href="cart.html">Shopping Cart</a>
+      <a href="offers.html">Special Offers</a>
+    </nav>
+  </header>
+
+  <section>
+    <input type="text" id="searchBox" placeholder="Search coffee...">
+    <ul id="coffeeList">
+      <li><strong>Espresso Blend</strong> – Rich, bold, perfect for lattes.</li>
+      <li><strong>Single-Origin Ethiopia</strong> – Floral notes, pour-over recommended.</li>
+      <li><strong>Colombian Roast</strong> – Smooth, nutty, great for French press.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Bean Boutique</p>
+  </footer>
+
+  <script>
+    
+    document.getElementById("searchBox").addEventListener("keyup", function() {
+      let filter = this.value.toLowerCase();
+      let items = document.querySelectorAll("#coffeeList li");
+      items.forEach(item => {
+        item.style.display = item.textContent.toLowerCase().includes(filter) ? "" : "none";
+      });
+    });
+  </script>
+</body>
+</html>
