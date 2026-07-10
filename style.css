@@ -36,6 +36,15 @@ nav a:hover {
   color: #f5deb3;
 }
 
+.hero {
+  background: url('https://i.pinimg.com/736x/39/3b/b1/393bb1bb15940aea508dd07c5da23917.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  width: 500px;
+  
+}
+
 .slideshow img {
   width: 500px;
   max-height: 400px;
