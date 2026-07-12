@@ -18,18 +18,66 @@
     </nav>
   </header>
 
-  <section>
-    <input type="text" id="searchBox" placeholder="Search coffee...">
-    <ul id="coffeeList">
-      <li><strong>Espresso Blend</strong> – Rich, bold, perfect for lattes.</li>
-      <li><strong>Single-Origin Ethiopia</strong> – Floral notes, pour-over recommended.</li>
-      <li><strong>Colombian Roast</strong> – Smooth, nutty, great for French press.</li>
-    </ul>
-  </section>
-
-  <footer>
-    <p>&copy; 2026 Bean Boutique</p>
-  </footer>
+<main class="container">
+            <h1>Our Products</h1>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/22/62/3d/22623d536116b4a1765b644e2b5f9278.jpg" alt="Espresso" class="card-img">
+                    <h2>Espresso</h2>
+                    <p>Rich and bold espresso made from premium beans.</p>
+                    <button class="price" onclick="addToCart('Espresso', 3000)">MK3000</button>
+                </div>
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/21/74/32/2174329b8ef1603c1cbc68bd9ef5865a.jpg" alt="Cappuccino" class="card-img">
+                    <h2>Cappuccino</h2>
+                    <p>A perfect blend of espresso, steamed milk, and foam.</p>
+                    <button class="price" onclick="addToCart('Cappuccino', 6000)">MK6000</button>
+                </div>
+                <div class="card">
+                    <img src="https://i.pinimg.com/1200x/c4/73/7e/c4737e013a673e196416210867f9b1f8.jpg" alt="Latte" class="card-img">
+                    <h2>Latte</h2>
+                    <p>Smooth and creamy latte with a touch of sweetness.</p>
+                    <button class="price" onclick="addToCart('Latte', 4500)">MK4500</button>
+                </div>
+                <div class="card">
+                    <img src="https://i.pinimg.com/1200x/99/b8/46/99b846df229c74b9d9e125fb17436060.jpg" alt="Mucha" class="card-img">
+                    <h2>Mocha</h2>
+                    <p>A delightful mix of chocolate and espresso.</p>
+                    <button class="price" onclick="addToCart('Mocha', 5000)">MK5000</button>
+                </div>
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/7b/fd/a2/7bfda2a39398c93e8e96b04d361222e3.jpg" alt="Traditional Coffee" class="card-img">
+                    <h2>Traditional Coffee</h2>
+                    <p>Classic coffee brewed the traditional way.</p>
+                    <button class="price" onclick="addToCart('Traditional Coffee', 2500)">MK2500</button>
+                </div>
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/07/e9/99/07e99903759795bc3d0de1c0e7612deb.jpg" alt="classic coffee" class="card-img">
+                    <h2>Classic Coffee</h2>
+                    <p>A simple and satisfying cup of coffee.</p>
+                    <button class="price" onclick="addToCart('Classic Coffee', 2000)">MK2000</button>   
+                </div>
+                <div class="card">
+                    <img src="https://i.pinimg.com/1200x/a8/9f/bb/a89fbbdc56840864a8602773c5f9275b.jpg" alt="Coffee Machine" class="card-img">
+                    <h2>Coffee Machine</h2>
+                    <p>High-quality coffee machine for home or office use.</p>
+                    <button class="price" onclick="addToCart('Coffee Machine', 15000)">MK15000</button>
+                </div>
+                <div class="card">
+                    <img src="https://i.pinimg.com/1200x/e6/b1/bc/e6b1bc9418aeb79bae72858820b5efe4.jpg" alt="Coffee Grinder" class="card-img">
+                    <h2>Coffee Grinder</h2>
+                    <p>Grind your own beans for the freshest coffee experience.</p>
+                    <button class="price" onclick="addToCart('Coffee Grinder', 8000)">MK8000</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/f1/e1/1e/f1e11edb96c64510f1de52a4d3132baa.jpg" alt="Brewwing" class="card-img">
+                <h2>Coffee Brewing</h2>
+                <p>Premium coffee bean brew sourced from the best farms.</p>
+                <button class="price" onclick="addToCart('Coffee Brewing', 10000)">MK10000</button>
+            </div>
+            
+        </main>
 
   <script>
     
