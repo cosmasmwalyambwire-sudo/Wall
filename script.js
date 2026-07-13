@@ -36,7 +36,7 @@ function displayCart() {
   document.getElementById("cart-total").textContent = total;
 }
 
-// Run on page load
+
 window.onload = function() {
   loadCart();
   if (document.getElementById("cart-items")) {
