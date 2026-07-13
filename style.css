@@ -240,7 +240,6 @@ footer {
   margin-bottom: 10px;
 }
 
-
 form {
   background: #fff;
   padding: 20px;
@@ -335,6 +334,35 @@ footer {
   border-radius: 4px;
   margin-bottom: 15px;
 }
+
+
+.events {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 40px;
+}
+.events div {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.events img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+.events h2 {
+  color: #6f4e37;
+  margin-bottom: 10px;
+}
+
+
+
+
 
 
 .cart-container {
