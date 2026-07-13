@@ -50,6 +50,8 @@ nav a:hover {
   text-align: center;
   padding: 120px 20px;
   position: relative;
+  height: 50px;
+  width: 100%;
 }
 .hero::before {
   content: "";
@@ -85,8 +87,8 @@ nav a:hover {
 
 
 .slideshow {
-  max-width: 900px;
-  margin: 50px auto;
+  max-width: 400px;
+  margin: 60px auto;
   position: relative;
 }
 .slideshow img {
