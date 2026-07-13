@@ -87,6 +87,7 @@
       alert(item + " added to cart at MK" + price);
     }
 
+
     
     document.getElementById("searchBox").addEventListener("keyup", function() {
       let filter = this.value.toLowerCase();
@@ -95,6 +96,20 @@
         item.style.display = item.textContent.toLowerCase().includes(filter) ? "" : "none";
       });
     });
+
+    function calculate() {
+  let display = document.getElementById('search box');
+  try  {
+        display.value = eval(display.value);
+      } catch {
+        display.value = "Error";
+      }
+    }
+  
+    function clearDisplay() {
+      document.getElementById('calcDisplay').value = "";
+    }
+
   </script>
 </body>
 </html>
