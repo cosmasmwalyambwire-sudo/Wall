@@ -93,7 +93,7 @@
   </footer>
 
   <script>
-    // Modal
+    
     window.onload = function() {
       document.getElementById("discountModal").style.display = "block";
     };
@@ -106,10 +106,10 @@
     showSlides();
     function showSlides() {
       let slides = document.querySelectorAll(".slideshow img");
-      slides.forEach(slide => slide.style.display = "none");
+      slides.forEach(slide => slide.classList.remove("active"));
       slideIndex++;
       if (slideIndex > slides.length) { slideIndex = 1 }
-      slides[slideIndex - 1].style.display = "block";
+      slides[slideIndex - 1].classList.add("active");
       setTimeout(showSlides, 3000);
     }
   </script>
