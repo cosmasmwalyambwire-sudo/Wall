@@ -1,38 +1,36 @@
 <!DOCTYPE html>
-<html>
-    <title>bean Boutique</title>
-    <link rel="stylesheet" href="style.css">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shopping Cart - Bean Boutique</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="brand logo">
-            <img src="https://i.pinimg.com/1200x/49/e7/8f/49e78fa4a23c6db17a435365988d6037.jpg" alt="coffe logo">
-            <div class="logo">bean Boutique</div>
-        </div>
-        <nav>
-            <a href="index.html">home</a>
-            <a href="menu.html"></a>
-            <a href="cart.html">cart (<span id="cart-count">0</span>)</a>
-        </nav>
+  <header>
+    <h1>Your Shopping Cart</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="coffee.html">Coffee Selection</a>
+      <a href="equipment.html">Brewing Equipment</a>
+      <a href="events.html">Events</a>
+      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
 
-    </header>
-    <img src="https://i.pinimg.com/736x/39/3b/b1/393bb1bb15940aea508dd07c5da23917.jpg" alt="Home of coffee" class="hero-img">
-    <main class="container">
-        <div class="hero">
-            <h2>m</h2>
-            <p>p</p>
-        </div>
-    </main>
-    <div id="welcome modal" class="modal">
-        <div class="modal-content">
-            <h2></h2>
-            <p>p</p>
-        </div>
+  <main class="cart-container">
+    <h2>Items in Your Cart</h2>
+    <ul id="cart-items"></ul>
+
+    <div class="cart-summary">
+      <p><strong>Total:</strong> MK<span id="cart-total">0</span></p>
+      <button id="checkout">Checkout</button>
     </div>
+  </main>
 
-    <footer>
-        <p>&copy; 2026 bean Boutique</p>
-    </footer>
-    <script src="script.js"></script>
+  <footer>
+    <p>&copy; 2026 Bean Boutique</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
