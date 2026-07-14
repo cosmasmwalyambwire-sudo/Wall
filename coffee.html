@@ -87,22 +87,39 @@
 
   <script>
     
-    function addToCart(item, price) {
-      alert(item + " added to cart at MK" + price);
+    function addToCart(productName, productPrice) {
+      
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    
+      const product = {
+        name: productName,
+        price: productPrice
+      };
+ 
+      cart.push(product);
+ 
+      localStorage.setItem('cart', JSON.stringify(cart));
+
+      alert(`${productName} has been added to your cart!`);
     }
 
+    const searchBox = document.getElementById('searchBox');
+    searchBox.addEventListener('input', function() {
+      const query = searchBox.value.toLowerCase();
+      const cards = document.querySelectorAll('.card');
 
-    document.getElementById("searchBox").addEventListener("keyup", function() {
-      let filter = this.value.toLowerCase();
-      let items = document.querySelectorAll(".card");
-      items.forEach(item => {
-        item.style.display = item.textContent.toLowerCase().includes(filter) ? "" : "none";
+      cards.forEach(card => {
+        const title = card.querySelector('h2').textContent.toLowerCase();
+        if (title.includes(query)) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
       });
     });
 
-  
-    
-
+   
   </script>
 </body>
 </html>
