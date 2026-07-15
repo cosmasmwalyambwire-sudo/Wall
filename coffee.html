@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Coffee Selection - Bean Boutique</title>
   <link rel="stylesheet" href="style.css">
-  </head>
+</head>
+
 <body>
   <header>
     <h1>Our Coffee blends</h1>
@@ -58,7 +60,7 @@
         <img src="https://i.pinimg.com/736x/07/e9/99/07e99903759795bc3d0de1c0e7612deb.jpg" alt="Classic Coffee" class="card-img">
         <h2>Classic Coffee</h2>
         <p>A simple and satisfying cup of coffee.</p>
-        <button class="price" onclick="addToCart('Classic Coffee', 2000)">MK2000</button>   
+        <button class="price" onclick="addToCart('Classic Coffee', 2000)">MK2000</button>
       </div>
       <div class="card">
         <img src="https://i.pinimg.com/1200x/a8/9f/bb/a89fbbdc56840864a8602773c5f9275b.jpg" alt="Coffee Machine" class="card-img">
@@ -71,7 +73,7 @@
         <h2>Coffee Grinder</h2>
         <p>Grind your own beans for the freshest coffee experience.</p>
         <button class="price" onclick="addToCart('Coffee Grinder', 8000)">MK8000 </button>
-        
+
       </div>
       <div class="card">
         <img src="https://i.pinimg.com/736x/f1/e1/1e/f1e11edb96c64510f1de52a4d3132baa.jpg" alt="Brewing" class="card-img">
@@ -79,33 +81,34 @@
         <p>Premium coffee bean brew sourced from the best farms.</p>
 
         <div class="hero-buttons">
-        <a href="cart.html" class="btn">→</a>
-        <button class="price" onclick="addToCart('Coffee Brewing', 10000)">MK10000</button>
+          <a href="cart.html" class="btn">→</a>
+          <button class="price" onclick="addToCart('Coffee Brewing', 10000)">MK10000</button>
+        </div>
       </div>
     </div>
   </main>
 
   <script>
-    
+
     function addToCart(productName, productPrice) {
-      
+
       let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-    
+
       const product = {
         name: productName,
         price: productPrice
       };
- 
+
       cart.push(product);
- 
+
       localStorage.setItem('cart', JSON.stringify(cart));
 
       alert(`${productName} has been added to your cart!`);
     }
 
     const searchBox = document.getElementById('searchBox');
-    searchBox.addEventListener('input', function() {
+    searchBox.addEventListener('input', function () {
       const query = searchBox.value.toLowerCase();
       const cards = document.querySelectorAll('.card');
 
@@ -119,7 +122,8 @@
       });
     });
 
-   
+
   </script>
 </body>
+
 </html>
