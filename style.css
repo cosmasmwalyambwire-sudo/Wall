@@ -412,10 +412,8 @@ footer {
   background: #8c5a42;
 }
 
-.Map {
-  width: 100px;
-  height: 400px;
-  border: none;
-  border-radius: 8px;
+.Map iframe{
+  width: 900px;
+  height: 900px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
