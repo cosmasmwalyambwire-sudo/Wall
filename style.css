@@ -435,4 +435,30 @@ footer p {
     font-size: 14px;
     margin: 250px 0;
   }
+   .offer-card h2 {
+    font-size: 1.1rem;
+  }
+
+  .offer-card p {
+    font-size: 0.9rem;
+  }
+
+  .offer-card img {
+    height: 150px; 
+    width: 100px;
+  }
+
 }
+ .offers {
+    grid-template-columns: 1fr; 
+  }
+
+  .offer-card h2 {
+    font-size: 1.3rem;
+  }
+
+  .offer-card p {
+    font-size: 1rem;
+  }
+}
+
