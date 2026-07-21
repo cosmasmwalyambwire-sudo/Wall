@@ -1,124 +1,276 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
+</html>
+
 <head>
-  <meta charset="UTF-8">
-  <title>Bean Boutique - Home</title>
+
+  <title>Bean Boutique | Premium Coffee Shop</title>
+
   <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/06a6dca3f2.js" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
+
   <header>
+
     <div class="brand-logo">
-      <img src="https://i.pinimg.com/736x/39/3b/b1/393bb1bb15940aea508dd07c5da23917.jpg" alt="Coffee Logo" class="logo-img">
-      <h1>Bean Boutique Coffee Shop</h1>
+
+      <img src="https://i.pinimg.com/736x/39/3b/b1/393bb1bb15940aea508dd07c5da23917.jpg" alt="Bean Boutique Logo"
+        class="logo-img">
+
+      <div>
+
+        <h1>Bean Boutique</h1>
+
+        <small>Premium Coffee Shop</small>
+
+      </div>
+
     </div>
+
     <nav>
+
       <a href="index.html">Home</a>
       <a href="coffee.html">Coffee Selection</a>
-      <a href="equipment.html">Brewing Equipment</a>
+      <a href="equipment.html">Equipment</a>
       <a href="events.html">Events</a>
-      <a href="cart.html">Shopping Cart (<span id="cart-count">0</span>)</a>
-      <a href="offers.html">Special Offers</a>
+      <a href="offers.html">Offers</a>
+      <a href="cart.html">
+        <i class="fas fa-shopping-cart"></i>
+        (<span id="cart-count">0</span>)
+      </a>
     </nav>
+
   </header>
 
-  
   <section class="hero">
-    <h2>Freshly Brewed, Just for You</h2>
-    <p>Discover our artisan coffee blends and brewing equipment.</p>
-    <div class="hero-buttons">
-      <a href="coffee.html" class="btn">Our Menu →</a>
-      <a href="offers.html" class="btn">Order Ahead →</a>
+    <div class="hero-overlay">
+
+      <h2>Experience Coffee Like Never Before</h2>
+      <p>
+        Discover premium coffee beans, handcrafted drinks,
+        brewing equipment and unforgettable coffee experiences
+        at Bean Boutique.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="coffee.html" class="btn">
+          Explore Coffee
+        </a>
+        <a href="offers.html" class="btn secondary">
+          View Offers
+        </a>
+      </div>
     </div>
   </section>
 
-
-  
-    <section class="slideshow">
-      <div class="slideshow-container">
-        <img src="https://i.pinimg.com/1200x/c1/5f/19/c15f19c2e7b0a94dc98a160fbc358d60.jpg" alt="Coffee Beans" class="active">
-        <img src="https://i.pinimg.com/736x/c3/1c/c8/c31cc8b0ea9474e7d9d2a695d5af628d.jpg" alt="Brewing Equipment">
-        <img src="https://i.pinimg.com/1200x/32/44/9c/32449ca65fb8ae32fbf99cc9c5e93ac9.jpg" alt="Coffee Community">
-    </div>
-  </section>
-
-  
   <section class="about">
-    <h2>About Bean Boutique</h2>
-    <p>At Bean Boutique, we celebrate the art of coffee. Our beans are ethically sourced and roasted with care to bring out bold, rich flavors.</p>
+    <h2>Welcome to Bean Boutique</h2>
+    <p>
+      Bean Boutique is passionate about delivering
+      freshly roasted coffee made from carefully selected beans.
+
+      Whether you enjoy espresso, cappuccino,
+      latte or traditional coffee, we have something
+      prepared specially for you.
+    </p>
+    <p>
+      We also provide premium brewing equipment,
+      coffee workshops, and special offers to help
+      every customer enjoy the perfect cup.
+    </p>
   </section>
 
-  
+  <section class="slideshow">
+    <div class="slideshow-container">
+      <img src="https://i.pinimg.com/1200x/c1/5f/19/c15f19c2e7b0a94dc98a160fbc358d60.jpg" class="active"
+        alt="Coffee Beans">
+      <img src="https://i.pinimg.com/736x/c3/1c/c8/c31cc8b0ea9474e7d9d2a695d5af628d.jpg" alt="Coffee Cup">
+      <img src="https://i.pinimg.com/1200x/32/44/9c/32449ca65fb8ae32fbf99cc9c5e93ac9.jpg" alt="Coffee Shop">
+    </div>
+  </section>
+
+  <section class="why-us">
+    <h2>Why Choose Bean Boutique?</h2>
+    <div class="features">
+      <div class="feature">
+        <i class="fas fa-mug-hot"></i>
+        <h3>Premium Coffee</h3>
+        <p>
+          Freshly roasted coffee prepared
+          with passion and care.
+        </p>
+      </div>
+
+      <div class="feature">
+        <i class="fas fa-seedling"></i>
+        <h3>Organic Beans</h3>
+        <p>
+          Sustainably sourced beans from
+          trusted coffee farms.
+        </p>
+      </div>
+
+      <div class="feature">
+        <i class="fas fa-shipping-fast"></i>
+        <h3>Fast Delivery</h3>
+        <p>
+          Reliable nationwide delivery
+          for all online orders.
+        </p>
+      </div>
+
+      <div class="feature">
+        <i class="fas fa-award"></i>
+        <h3>Quality Guaranteed</h3>
+        <p>
+          Every product is carefully
+          selected for maximum quality.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
   <section class="featured">
-    <h2>Featured Products</h2>
-    <h2>Customer Favorites</h2>
+    <h2>Customer Favourite Products</h2>
     <div class="product-grid">
       <div class="product">
-        <img src="https://i.pinimg.com/736x/c3/1c/c8/c31cc8b0ea9474e7d9d2a695d5af628d.jpg" alt="Espresso Blend">
-        <h3>Espresso Blend</h3>
-        <p>Rich, bold, and smooth.</p>
-        <button>Add to Cart</button>
+        <img src="https://i.pinimg.com/736x/22/62/3d/22623d536116b4a1765b644e2b5f9278.jpg" alt="Espresso">
+        <h3>Espresso</h3>
+        <p>
+          Strong, rich and bold espresso
+          made from premium coffee beans.
+        </p>
+        <h4>MK 3,000</h4>
+        <button onclick="addToCart('Espresso',3000)">
+          Add to Cart
+        </button>
       </div>
       <div class="product">
-        <img src="https://i.pinimg.com/736x/d9/67/4c/d9674c6be3c5e3c6ea8a6ece9e8263f5.jpg" alt="French Press">
-        <h3>French Press</h3>
-        <p>Classic brewing equipment for a perfect cup.</p>
-        <button>Add to Cart</button>
+        <img src="https://i.pinimg.com/736x/21/74/32/2174329b8ef1603c1cbc68bd9ef5865a.jpg" alt="Cappuccino">
+        <h3>Cappuccino</h3>
+        <p>
+          Smooth espresso blended
+          with steamed milk and foam.
+        </p>
+        <h4>MK 6,000</h4>
+        <button onclick="addToCart('Cappuccino',6000)">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="product">
+        <img src="https://i.pinimg.com/1200x/99/b8/46/99b846df229c74b9d9e125fb17436060.jpg" alt="Mocha">
+        <h3>Mocha</h3>
+        <p>
+          Chocolate and espresso
+          combined into one delicious drink.
+        </p>
+        <h4>MK 5,000</h4>
+        <button onclick="addToCart('Mocha',5000)">
+          Add to Cart
+        </button>
       </div>
     </div>
+
+    <section class="services">
+      <h2>Our Services</h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <i class="fas fa-coffee"></i>
+          <h3>Fresh Coffee</h3>
+          <p>Freshly brewed coffee prepared by experienced baristas every day.</p>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-blender"></i>
+          <h3>Brewing Equipment</h3>
+          <p>Purchase high-quality coffee machines, grinders and brewing accessories.</p>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-users"></i>
+          <h3>Coffee Workshops</h3>
+          <p>Learn professional coffee brewing and latte art from our experts.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="events-preview">
+      <h2>Upcoming Events</h2>
+      <div class="event-card">
+        <h3>Latte Art Workshop</h3>
+        <p><strong>Date:</strong> 20 July 2026</p>
+        <p>
+          Join our professional baristas and learn
+          the basics of creating beautiful latte art.
+        </p>
+        <a href="events.html" class="btn">View All Events</a>
+      </div>
+    </section>
   </section>
 
-  
-  <section class="events-preview">
-    <h2>Upcoming Events</h2>
-    <p>Join us for our Latte Art Workshop on July 20th!</p>
-    <a href="events.html" class="btn">See All Events →</a>
+  <section class="contact" 
+  <h2>Visit Bean Boutique</h2>
+    <p><i class="fas fa-map-marker-alt"></i> Lilongwe, Malawi</p>
+    <p><i class="fas fa-phone"></i> +265 999 999 999</p>
+    <p><i class="fas fa-envelope"></i> info@beanboutique.com</p>
   </section>
 
-  
-  <section class="testimonials">
-    <h2>What Our Customers Say</h2>
-    <blockquote>"Best coffee in town! The aroma is unforgettable." – Sarah M.</blockquote>
-    <blockquote>"I love the community vibe here." – James K.</blockquote>
-  </section>
 
-  
   <div id="discountModal" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
       <h2>Welcome to Bean Boutique!</h2>
-      <p>Sign up with your email and get 10% off your first purchase!</p>
+      <p>
+        Sign up today and receive
+        <strong>10% OFF</strong>
+        your first purchase.
+      </p>
+
       <input type="email" placeholder="Enter your email">
-      <button>Sign Up</button>
+      <button>
+        Claim Discount
+      </button>
     </div>
   </div>
-  <script src="https://kit.fontawesome.com/06a6dca3f2.js" crossorigin="anonymous"></script>
 
   <footer>
-    <p>&copy; 2026 Bean Boutique</p> <i class="fas fa-phone"> </i> +265 999 999 999
-    
-    
+    <div class="footer-container">
+      <div>
+        <h3>Bean Boutique</h3>
+        <p>Premium Coffee Shop</p>
+      </div>
+      <div>
+        <h3>Opening Hours</h3>
+        <p>Monday - Friday</p>
+        <p>8:00 AM - 8:00 PM</p>
+      </div>
+      <div>
+        <h3>Follow Us</h3>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-x-twitter"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+    </div>
+    <hr>
+    <p>
+      © 2026 Bean Boutique Coffee Shop. All Rights Reserved.
+    </p>
   </footer>
 
-  <script>
-    
-    window.onload = function() {
-      document.getElementById("discountModal").style.display = "block";
-    };
-    document.querySelector(".close").onclick = function() {
-      document.getElementById("discountModal").style.display = "none";
-    };
-
-    
-    let slideIndex = 0;
-    showSlides();
-    function showSlides() {
-      let slides = document.querySelectorAll(".slideshow img");
-      slides.forEach(slide => slide.classList.remove("active"));
-      slideIndex++;
-      if (slideIndex > slides.length) { slideIndex = 1 }
-      slides[slideIndex - 1].classList.add("active");
-      setTimeout(showSlides, 3000);
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
+
 </html>

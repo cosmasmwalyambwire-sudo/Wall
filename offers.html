@@ -18,7 +18,48 @@
     </nav>
   </header>
 <section class="offers">
-  <div class="offer-card">
+ <div class="offer-card">
     <h2>Buy 2 Bags, Get 1 Free</h2>
+
     <img src="https://i.pinimg.com/control1/736x/ed/b8/9d/edb89d781d5d69822c19a92e53f3db33.jpg" alt="Coffee bags offer">
-    <p>Stock up on your favorite blends and enjoy a free bag
+
+  <p>Stock up on your favorite blends and enjoy a free bag.</p>
+
+
+
+<button class="price" onclick="addToCart('Buy 2 Bags, Get 1 Free', 25)">
+    Add to Cart
+</button>
+    
+  </div>
+
+  <div class="offer-card">
+    <h2>Monthly Coffee Subscription</h2>
+    <img src="https://i.pinimg.com/736x/ed/b8/9d/edb89d781d5d69822c19a92e53f3db33.jpg" alt="Coffee subscription offer">
+    <p>Get freshly roasted coffee delivered to your door every month.</p>
+    
+    <button class="price" onclick="addToCart('Monthly Coffee Subscription', 15)">
+      Add to Cart
+    </button>
+  </div>
+</div>
+  </section>
+  <script>
+    function addToCart(productName, productPrice) {
+
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+
+      const product = {
+        name: productName,
+        price: productPrice
+      };
+
+      cart.push(product);
+
+      localStorage.setItem('cart', JSON.stringify(cart));
+
+      alert(`${productName} has been added to your cart!`);
+    }
+
+  </script>
