@@ -456,9 +456,10 @@ form button:hover {
 }
 
 .cart-container {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 40px;
 }
 
 #cart-items {
@@ -486,7 +487,7 @@ form button:hover {
   margin-top: 20px;
   background: #fdfdfd;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
   border: 1px solid #ddd;
   text-align: right;
 }
